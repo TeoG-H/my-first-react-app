@@ -3,7 +3,7 @@ function Header(){
 return (
     <header>
         <h1>
-            My w
+            Website
         </h1>
         <nav>
             <ul>

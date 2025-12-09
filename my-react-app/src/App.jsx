@@ -1,18 +1,26 @@
-
+import { useState } from "react";
 import Header from "./Header.jsx"
 import Footer from "./Footer.jsx";
-import Food from "./Food.jsx";
 import Card from "./Card.jsx";
+import Button from "./Button/Button.jsx";
 function App() {
+  const [showCard, setShowCard] = useState(false);
+
+  const handleToggleCard = () => {
+    setShowCard(prev => !prev);
+  };
 
   return(
     <>
-      <Card/>
+       {showCard && <Card name="Teodor" />}
+
+      
+      <div className="buttons-wrapper">
+          <Button onShowCard={handleToggleCard} />
+      </div>
       <Header/>
-      <Food/>
       <Footer/>
-      
-      
+  
     </>
   );
 
