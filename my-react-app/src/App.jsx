@@ -3,6 +3,7 @@ import Header from "./Header.jsx"
 import Footer from "./Footer.jsx";
 import Card from "./Card.jsx";
 import Button from "./Button/Button.jsx";
+import InputText from "./InputText.jsx";
 function App() {
   const [showCard, setShowCard] = useState(false);
 
@@ -12,13 +13,16 @@ function App() {
 
   return(
     <>
+      <Header/>
+      
        {showCard && <Card name="Teodor" />}
 
       
       <div className="buttons-wrapper">
           <Button onShowCard={handleToggleCard} />
       </div>
-      <Header/>
+      <hr/>
+      <InputText/>
       <Footer/>
   
     </>
