@@ -4,6 +4,8 @@ import Footer from "./Footer.jsx";
 import Card from "./Card.jsx";
 import Button from "./Button/Button.jsx";
 import InputText from "./InputText.jsx";
+import ListOfProducts from "./ListOfProducts.jsx";
+import ToDoList from "./toDoList/ToDoList.jsx";
 function App() {
   const [showCard, setShowCard] = useState(false);
 
@@ -22,9 +24,12 @@ function App() {
           <Button onShowCard={handleToggleCard} />
       </div>
       <hr/>
-      <InputText/>
+       <div className="info-layout">
+          <InputText/>
+          <ListOfProducts/>
+      </div>
+      <ToDoList/>
       <Footer/>
-  
     </>
   );
 
