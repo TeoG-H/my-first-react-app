@@ -1,3 +1,13 @@
+body{
+  color:white;
+  background-image: url(assets/background.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+
 .card{
   border: 3px solid rgb(21, 139, 15);
   border-radius: 12px;

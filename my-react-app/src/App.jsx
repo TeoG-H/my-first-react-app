@@ -6,6 +6,7 @@ import Button from "./Button/Button.jsx";
 import InputText from "./InputText.jsx";
 import ListOfProducts from "./ListOfProducts.jsx";
 import ToDoList from "./toDoList/ToDoList.jsx";
+import DigitalClock from "./digitalClock/DigitalClock.jsx";
 function App() {
   const [showCard, setShowCard] = useState(false);
 
@@ -16,7 +17,7 @@ function App() {
   return(
     <>
       <Header/>
-      
+      <DigitalClock/>
        {showCard && <Card name="Teodor" />}
 
       
